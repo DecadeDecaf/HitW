@@ -38,7 +38,7 @@ convo = choose(
 	
 } else {
 	
-var wrong = "Incorrect! I am wishing for a PHD in geology. I believe I will be taking my business elsewhere."
+var wrong = "[CUSTOMER]: Incorrect! I am wishing for a PHD in geology. I believe I will be taking my business elsewhere."
 
 convo = choose(
 	[["[CUSTOMER]: Hey, I was gonna wish for some new pins or something, but", snd_puddle1a],
@@ -52,20 +52,20 @@ convo = choose(
 		["[GENE]: Um, seals?", snd_seal1b],
 		["[HARRY]: I just love seals. Swimming seals, smiling seals, bedtime seals…", snd_seal1c],
 		["[GENE]: What the **** is a “bedtime seal?”", snd_seal1d],
-		["[HARRY]: Hmmm. $9 for seals. This is my final offer.", snd_seal1e, make_choice, [[
+		["[HARRY]: Hmmm. $9 for seals. That is my final offer.", snd_seal1e, make_choice, [[
 			["wish granted?", [["[GENE]: Your wish is my command?", snd_seal2a, make_sale, [0.04]], ["[GENE]: Hey! What gives? This isn’t n— this is four cents! Come back here with the rest!", snd_seal2b], ["[HARRY]: Teehee~!", snd_seal2c]]],
 			["I don’t understand", [["[GENE]: I can’t grant a wish I don’t understand.", snd_seal3a], ["[HARRY]: Hmmm. This was a waste of time.", snd_seal3b]]],
-			["I hate seals", [["[GENE]: Seals go to hell when they die.", snd_seal4a], ["…No? No!", snd_seal4b]]]
+			["I hate seals", [["[GENE]: Seals go to hell when they die.", snd_seal4a], ["[HARRY]: …No? No!", snd_seal4b]]]
 		]]]
 	],
 	[["[HARRY]: My name is Harry Humbleton and I wish for seals.", snd_sealy1a],
 		["[GENE]: Um, seals?", snd_seal1b],
 		["[HARRY]: I just love seals. Swimming seals, smiling seals, bedtime seals…", snd_sealy1c],
 		["[GENE]: What the **** is a “bedtime seal?”", snd_seal1d],
-		["[HARRY]: Hmmm. $9 for seals. This is my final offer.", snd_sealy1e, make_choice, [[
+		["[HARRY]: Hmmm. $9 for seals. That is my final offer.", snd_sealy1e, make_choice, [[
 			["wish granted?", [["[GENE]: Your wish is my command?", snd_seal2a, make_sale, [0.04]], ["[GENE]: Hey! What gives? This isn’t n— this is four cents! Come back here with the rest!", snd_seal2b], ["[HARRY]: Teehee~ the most coins for the least money~\nfour pennies for thee~ and seals for me~", snd_sealy2c]]],
 			["I don’t understand", [["[GENE]: I can’t grant a wish I don’t understand.", snd_seal3a], ["[HARRY]: Hmmm. This was a waste of time.", snd_sealy3b]]],
-			["I hate seals", [["[GENE]: Seals go to hell when they die.", snd_seal4a], ["No! Why would you say that?!", snd_sealy4b]]]
+			["I hate seals", [["[GENE]: Seals go to hell when they die.", snd_seal4a], ["[HARRY]: No! Why would you say that?!", snd_sealy4b]]]
 		]]]
 	],
 	[["[CUSTOMER]: Hey genie!", snd_dance1a],
