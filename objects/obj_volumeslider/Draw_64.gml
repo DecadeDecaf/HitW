@@ -15,4 +15,4 @@ draw_set_valign(fa_bottom)
 
 draw_set_font(fnt_ui)
 draw_set_alpha(1)
-draw_text_transformed(375, 590, string(round(volume * 100)) + "%", 0.7, 0.7, 0)
+draw_text_transformed(375, 590, "Volume: " + string(round(volume * 100)) + "%", 0.7, 0.7, 0)
